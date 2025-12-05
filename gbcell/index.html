@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assistência Técnica de Celular - TechMobile</title>
+  <title>GbCell</title>
 
   <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
@@ -12,25 +12,20 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Google Maps API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 
 <body>
   <header>
     <div class="container-header">
       <div class="logo">
-        <h1>TechMobile</h1>
+        
       </div>
       <nav role="navigation" aria-label="Menu principal">
         <ul class="nav-links">
           <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#porque">Por que Escolher</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="#orcamento">Orçamento</a></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menu">
           <span class="bar"></span>
@@ -42,28 +37,56 @@
   </header>
 
   <main>
-    <!-- Seção: Por que escolher -->
+    <section class="hero">
+      <!-- CELULAR ANIMAÇÃO -->
+       <div class="hero-texto">
+        <h1></h1>
+       </div>
+      <div class="celular">
+        <div class="btn1"></div>
+        <div class="btn2"></div>
+        <div class="btn3"></div>
+        <div class="btn4"></div>
+
+        <div class="celular-int">
+          <div class="ben-vindo">
+            bem-vindo
+            <span class="gb">à GbCell</span>
+          </div>
+        </div>
+
+        <div class="topo">
+          <div class="camera"><div class="int"></div></div>
+          <div class="fala"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUE ESCOLHER -->
     <section id="porque" class="section">
       <div class="container">
-        <h2>Por que Escolher a TechMobile?</h2>
+        <h2>Por que Escolher a GbCell</h2>
         <div class="vantagens-grid">
           <div class="vantagem-card">
-            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            <i class="fas fa-shield-alt"></i>
             <h3>Garantia</h3>
             <p>Todos os serviços com garantia de até 1 ano.</p>
           </div>
+
           <div class="vantagem-card">
-            <i class="fas fa-clock" aria-hidden="true"></i>
+            <i class="fas fa-clock"></i>
             <h3>Rapidez</h3>
             <p>Reparos rápidos e eficientes, sem demoras.</p>
           </div>
+
           <div class="vantagem-card">
-            <i class="fas fa-user-check" aria-hidden="true"></i>
+            <i class="fas fa-user-check"></i>
             <h3>Profissionais</h3>
             <p>Equipe especializada e certificada.</p>
           </div>
+
           <div class="vantagem-card">
-            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+            <i class="fas fa-dollar-sign"></i>
             <h3>Preços Justos</h3>
             <p>Orçamentos transparentes e acessíveis.</p>
           </div>
@@ -71,183 +94,139 @@
       </div>
     </section>
 
-    <!-- Seção: Serviços -->
+    <!-- SERVIÇOS -->
     <section id="servicos" class="section">
       <div class="container">
         <h2>Nossos Serviços</h2>
         <div class="servicos-grid">
-          <div class="servico-card">
-            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-            <h3>Reparo de Tela</h3>
-            <p>Substituição de telas quebradas com garantia.</p>
+
+          <div class="card">
+            <div class="image"><i class="fas fa-mobile-alt"></i></div>
+            <div class="card-info">
+              <span>Reparo de Tela</span>
+              <p>Substituição de telas quebradas com garantia.</p>
+            </div>
           </div>
-          <div class="servico-card">
-            <i class="fas fa-battery-half" aria-hidden="true"></i>
-            <h3>Troca de Bateria</h3>
-            <p>Baterias originais para melhor desempenho.</p>
+
+          <div class="card">
+            <div class="image"><i class="fas fa-battery-half"></i></div>
+            <div class="card-info">
+              <span>Troca de Bateria</span>
+              <p>Baterias originais para melhor desempenho.</p>
+            </div>
           </div>
-          <div class="servico-card">
-            <i class="fas fa-tools" aria-hidden="true"></i>
-            <h3>Manutenção Geral</h3>
-            <p>Limpeza, atualização e otimização do aparelho.</p>
+
+          <div class="card">
+            <div class="image"><i class="fas fa-tools"></i></div>
+            <div class="card-info">
+              <span>Manutenção Geral</span>
+              <p>Limpeza, atualização e otimização do aparelho.</p>
+            </div>
           </div>
-          <div class="servico-card">
-            <i class="fas fa-wifi" aria-hidden="true"></i>
-            <h3>Problemas de Conectividade</h3>
-            <p>Reparo de Wi-Fi, Bluetooth e outros.</p>
-          </div>
+
         </div>
-      </div>
-    </section>
-    <!-- Seção: Orçamento -->
-    <section id="orcamento" class="section">
-      <div class="container">
-        <h2>Solicite um Orçamento</h2>
-        <form method="POST" action="enviar.php"  aria-label="Formulário de orçamento">
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required />
-          </div>
-          <div class="form-group">
-            <label for="servico">Serviço Desejado:</label>
-            <select id="servico" name="servicos" required>
-              <option value="">Selecione</option>
-              <option value="Reparo de Tela">Reparo de Tela</option>
-              <option value="Troca de Bateria">Troca de Bateria</option>
-              <option value="Manutenção Geral">Manutenção Geral</option>
-              <option value="Problemas de Conectividade">Problemas de Conectividade</option>
-              <option value="Outros">Outros</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="telefone">Marca e Modelo:</label>
-            <input type="text" id="modelo" name="modelo" required />
-          </div>
-          <div class="form-group">
-            <label for="descricao">Descrição do Problema:</label>
-            <textarea id="descricao" name="descricao" rows="4" required></textarea>
-          </div>
-          <button type="submit">Enviar via WhatsApp</button>
-        </form>
       </div>
     </section>
 
-    <!-- Seção: Feedback -->
-    <section id="feedback" class="section">
-      <div class="container">
-        <h2>O que Nossos Clientes Dizem</h2>
-        <div class="feedback-content">
-          <p>Veja nossas avaliações no Google:</p>
-          <a href="https://www.google.com/search?q=techmobile+reviews" target="_blank" rel="noopener noreferrer"
-            class="btn-feedback">Ver Avaliações no Google</a>
-        </div>
-      </div>
-    </section>
-    <!-- Seção: FAQ -->
+    <!-- FAQ -->
     <section id="faq" class="section">
       <div class="container">
         <h2>Perguntas Frequentes</h2>
+
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Quanto tempo leva um reparo de tela?</button>
-            <div class="faq-answer" hidden>
-              <p>Geralmente, um reparo de tela leva de 30 minutos a 2 horas, dependendo do modelo do aparelho.</p>
-            </div>
+            <button class="faq-question">Quanto tempo leva um reparo de tela?</button>
+            <div class="faq-answer"><p>Geralmente leva de 30 minutos a 2 horas.</p></div>
           </div>
+
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Vocês trabalham com todas as marcas?</button>
-            <div class="faq-answer" hidden>
-              <p>Sim, trabalhamos com iPhone, Samsung, Motorola, Xiaomi e outras marcas populares.</p>
-            </div>
+            <button class="faq-question">Vocês trabalham com todas as marcas?</button>
+            <div class="faq-answer"><p>Sim, iPhone, Samsung, Motorola, Xiaomi e mais.</p></div>
           </div>
+
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">O que fazer se meu celular não liga?</button>
-            <div class="faq-answer" hidden>
-              <p>Traga o aparelho para diagnóstico. Pode ser problema de bateria, software ou hardware.</p>
-            </div>
+            <button class="faq-question">O que fazer se meu celular não liga?</button>
+            <div class="faq-answer"><p>Traga para diagnóstico gratuito.</p></div>
           </div>
+
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Oferecem suporte pós-reparo?</button>
-            <div class="faq-answer" hidden>
-              <p>Sim, oferecemos suporte técnico gratuito por 30 dias após o reparo.</p>
-            </div>
+            <button class="faq-question">Oferecem suporte pós-reparo?</button>
+            <div class="faq-answer"><p>Sim, suporte gratuito por 30 dias.</p></div>
           </div>
         </div>
+
       </div>
     </section>
 
-
-    <!-- Seção: Contato -->
+    <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="container">
         <h2>Contato</h2>
+
         <div class="contato-content">
           <div class="contato-info">
-            <p><i class="fas fa-phone" aria-hidden="true"></i> (11) 99999-9999</p>
-            <p><i class="fas fa-envelope" aria-hidden="true"></i> contato@techmobile.com</p>
-            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Rua Exemplo, 123 - São Paulo, SP</p>
+            <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+            <p><i class="fas fa-envelope"></i> contato@gbcell.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - São Paulo</p>
           </div>
+
           <div class="mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097!2d-46.6388!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1sen!2sbr!4v1630000000000!5m2!1sen!2sbr"
-              width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"
-              title="Localização TechMobile"></iframe>
+            <iframe width="100%" height="300" style="border:0;" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097!2d-46.6388!3d-23.5505!2m3..."
+              title="Localização GbCell"></iframe>
           </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Rodapé -->
- <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <i class="fas fa-tooth"></i>
-                        <span>GbCell</span>
-                    </div>
-                    <p>.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p><i class="fas fa-phone"></i> (11) 3456-7890</p>
-                    <p><i class="fas fa-envelope"></i> contato@sorribem.com.br</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - Centro</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Horários</h3>
-                    <p>Segunda a Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
-                    <p>Domingo: Fechado</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 </p>
-            </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <div class="logo"><span>GbCell</span></div>
+          <p>Assistência técnica especializada.</p>
         </div>
-    </footer>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p><i class="fas fa-phone"></i> (11) 3456-7890</p>
+          <p><i class="fas fa-envelope"></i> contato@sorribem.com.br</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - Centro</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Horários</h3>
+          <p>Seg–Sex: 8h às 18h</p>
+          <p>Sábado: 8h às 12h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 GbCell</p>
+      </div>
+    </div>
+  </footer>
+
   <a href="#orcamento" class="whatsapp-float">
     <i class="fas fa-money-bill-wave"></i>
   </a>
-  <!-- Scripts -->
-  <script src="script.js"></script>
-</body>
 
+  <script src="script.js"></script>
+
+</body>
 </html>
