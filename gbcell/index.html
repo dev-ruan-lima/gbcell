@@ -11,6 +11,7 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -27,6 +28,10 @@
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
+        <button style="margin-left: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Solicite seu Orçamento
+        </button>
+
         <button class="hamburger" aria-label="Abrir menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -35,6 +40,53 @@
       </nav>
     </div>
   </header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-12">
+          <h2 style="text-align: center;">Solicite um Orçamento</h2>
+          </div>
+        
+          <form class="form-orcamento" method="POST" action="enviar.php">
+            <div class="form">
+              <input class="form-control" type="text" placeholder="Nome:" id="nome" name="nome" required />
+            </div>
+            <div class="form">
+              <input class="form-control" type="text" placeholder="E-mail:" id="email" name="email" required />
+            </div>
+            <div class="form">
+              <input class="form-control" type="text" placeholder="Telefone:" id="telefone" name="telefone" required />
+            </div>
+            <div class="form">
+              <select class="form-select" aria-label="Serviço Desejado" id="servico" name="servicos" required>
+                <option selected>Serviços</option>
+                <option value="Reparo de tela">Reparo de Tela</option>
+                <option value="Troca de Bateria">Troca de Bateria</option>
+                <option value="Outros">Outros</option>
+              </select>
+            </div>
+            <div class="form">
+              <input class="form-control" type="text" placeholder="Marca & Modelo" id="modelo" name="modelo" required />
+            </div>
+            <div class="form">
+              <textarea class="form-control"placeholder="Descrição do Aparelho" id="descricao" name="descricao" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar via WhatsApp
+            </button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <main>
     <section class="hero">
@@ -227,6 +279,7 @@
   </a>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

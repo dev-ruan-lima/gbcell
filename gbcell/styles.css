@@ -463,6 +463,16 @@ h2 {
     font-weight: bold;
 }
 
+/* modal orçamento  */
+
+.form-orcamento {
+    max-width: 600px;
+}
+.form{
+    margin:15px
+}
+
+
 /* ============================
    FAQ
 ============================ */
