@@ -66,7 +66,7 @@ body {
     align-items: center;
     text-align: center;
 }
-/* sobre */
+
 .texto-sobre{
     font-size: 1.3rem;
     padding: 5px;
@@ -84,7 +84,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-/* logo */
+
 .nav-left{
     flex: 1;
 }
@@ -100,7 +100,7 @@ body {
 /* ============================
    Card sobre )
 ============================ */
-.card {
+/* .card {
   width: 350px;
   height: 300px;
   display: flex;
@@ -178,7 +178,7 @@ body {
   transition: all 0.5s ease;
 }
 
-/* Hover do Card */
+
 .card:hover::before {
   width: 350px;
   height: 300px;
@@ -196,13 +196,13 @@ body {
 
 .card:hover .image {
   transform: scale(2) translate(-60%, -40%);
-}
+} */
 
 
 /* ============================
    Mockup do Celular Animado
 ============================ */
-.celular {
+ .celular {
   width: 210px;
   height: 400px;
   background: black;
@@ -241,7 +241,7 @@ body {
   background-position: 100% 100%;
 }
 
-/* Camera e detalhes */
+
 .topo {
   position: absolute;
   top: 0px;
@@ -276,7 +276,6 @@ body {
   background-color: rgba(255, 255, 255, 0.048);
 }
 
-/* Conteúdo interno */
 .ben-vindo {
   display: flex;
   flex-flow: column;
@@ -304,7 +303,7 @@ body {
 
 .celular:hover .ben-vindo {
   transform: translateY(-20px);
-}
+} 
 
 /* ============================
    Cabeçalho e navegação
@@ -393,7 +392,7 @@ nav {
 /* ============================
    Seções
 ============================ */
-section {
+ section {
     padding: 100px 0;
     opacity: 0;
     transform: translateY(20px);
@@ -405,18 +404,6 @@ section.fade-in {
     transform: translateY(0);
 }
 
-#servicos,
-#porque,
-#faq,
-#feedback {
-    background-color: var(--color-bg-medium);
-}
-
-#contato,
-#orcamento {
-    background-color: var(--color-bg-dark);
-}
-
 h2 {
     text-align: center;
     margin-bottom: var(--spacing-large);
@@ -425,14 +412,12 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-
+} 
 
 /* ============================
    Cards e Grids
 ============================ */
-.servicos-grid,
+/* .servicos-grid,
 .vantagens-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -492,8 +477,7 @@ h2 {
     margin-bottom: var(--spacing-small);
     font-size: var(--font-size-medium);
     font-weight: bold;
-}
-/* Fundo MAIS ESCURO, combinando exatamente com o site */
+} 
 .modal-gb {
     background: #0c1a2c;
     border-radius: 18px;
@@ -501,7 +485,7 @@ h2 {
     border: 1px solid #1e90ff33;
 }
 
-/* Título centralizado e branco */
+
 .modal-gb .modal-title {
     width: 100%;
     text-align: center;
@@ -510,7 +494,7 @@ h2 {
     font-weight: 700;
 }
 
-/* Inputs */
+
 .gb-input {
     width: 100%;
     background: #071525;
@@ -526,14 +510,14 @@ h2 {
     color: #9cbcd7;
 }
 
-/* Foco azul */
+
 .gb-input:focus {
     outline: none;
     border-color: #1e90ff;
     box-shadow: 0 0 0 2px #1e90ff55;
 }
 
-/* Botão com o mesmo gradiente do site */
+
 .gb-btn {
     background: linear-gradient(90deg, #1e90ff, #39b6ff);
     color: #fff;
@@ -549,12 +533,12 @@ h2 {
     opacity: 0.9;
 }
 
-/* Botão de fechar branco */
+
 .btn-close-white {
     filter: invert(1);
 }
 
-/* Backdrop escuro */
+
 .modal-backdrop.show {
     opacity: 0.85;
 }
@@ -563,7 +547,7 @@ h2 {
 /* ============================
    FAQ
 ============================ */
-.faq-list {
+/* .faq-list {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -628,13 +612,13 @@ h2 {
         max-height: 500px;
     }
 }
-
+ */
 
 
 /* ============================
    Contato e Formulário
 ============================ */
-.contato-content {
+/* .contato-content {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-large);
@@ -668,12 +652,12 @@ button:focus {
     background-color: var(--color-primary-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-card);
-}
+} */
 
 /* ============================
    Rodapé
 ============================ */
-
+/* 
 .footer {
     background: var(--color-bg-medium);
     color: white;
@@ -756,7 +740,7 @@ button:focus {
 .whatsapp-float:hover {
     transform: scale(1.1);
     box-shadow: var(--shadow-card)
-}
+} */
 
 /* ============================
    Responsividade
