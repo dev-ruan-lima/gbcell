@@ -18,8 +18,8 @@
 <body>
   <header>
     <div class="container-header">
-      <div class="logo">
-        
+      <div class="nav-left">
+        <img src="img/logo-gbcell.png" alt="Logo GbCell" />
       </div>
       <nav role="navigation" aria-label="Menu principal">
         <ul class="nav-links">
@@ -29,9 +29,12 @@
           <li><a href="#feedback">Feedback</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-        <button style="margin-left: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Solicite seu Orçamento
-        </button>
+        <div class="bt-orcamento">
+          <button style="margin-left: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#orcamentoModal">
+            Solicite seu Orçamento
+          </button>
+        </div>
 
         <button class="hamburger" aria-label="Abrir menu">
           <span class="bar"></span>
@@ -42,50 +45,42 @@
     </div>
   </header>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="row">
-          <div class="col-12">
-          <h2 style="text-align: center;">Solicite um Orçamento</h2>
-          </div>
-        
-          <form class="form-orcamento" method="POST" action="enviar.php">
-            <div class="form">
-              <input class="form-control" type="text" placeholder="Nome:" id="nome" name="nome" required />
-            </div>
-            <div class="form">
-              <input class="form-control" type="text" placeholder="E-mail:" id="email" name="email" required />
-            </div>
-            <div class="form">
-              <input class="form-control" type="text" placeholder="Telefone:" id="telefone" name="telefone" required />
-            </div>
-            <div class="form">
-              <select class="form-select" aria-label="Serviço Desejado" id="servico" name="servicos" required>
-                <option selected>Serviços</option>
-                <option value="Reparo de tela">Reparo de Tela</option>
-                <option value="Troca de Bateria">Troca de Bateria</option>
-                <option value="Outros">Outros</option>
-              </select>
-            </div>
-            <div class="form">
-              <input class="form-control" type="text" placeholder="Marca & Modelo" id="modelo" name="modelo" required />
-            </div>
-            <div class="form">
-              <textarea class="form-control"placeholder="Descrição do Aparelho" id="descricao" name="descricao" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              Enviar via WhatsApp
-            </button>
-            
-          </form>
-        </div>
+<div class="modal fade" id="orcamentoModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-gb">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Solicite seu Orçamento</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
+
+      <div class="modal-body">
+
+        <form>
+
+          <input type="text" class="gb-input" placeholder="Nome completo" />
+          <input type="email" class="gb-input" placeholder="E-mail" />
+          <input type="text" class="gb-input" placeholder="Telefone" />
+
+          <select class="gb-input">
+            <option selected>Serviço desejado</option>
+          </select>
+
+          <input type="text" class="gb-input" placeholder="Marca e Modelo" />
+
+          <textarea class="gb-input" rows="3" placeholder="Descrição do problema"></textarea>
+
+          <button type="submit" class="gb-btn w-100">Enviar via WhatsApp</button>
+
+        </form>
+
+      </div>
+
     </div>
   </div>
 </div>
+
+
 
 
 
@@ -112,9 +107,10 @@
         </div>
       </div>
        <div class="hero-texto">
-        <h1>GB Cell – Seu celular novo de novo.</h1>
-     <p>Na GB Cell, cuidamos do seu smartphone com rapidez, atenção e peças de qualidade.
-Fazemos troca de tela, bateria, conectores, reparos em software e muito mais, sempre com transparência e garantia nos serviços.</p>
+        <img  style="width: 100%;" src="img/eslogam-gbcell2.png" alt="Logo GbCell" />
+        <!-- <h1">Seu celular novo de novo.</h1> -->
+     <!-- <p>Na GB Cell, cuidamos do seu smartphone com rapidez, atenção e peças de qualidade.
+Fazemos troca de tela, bateria, conectores, reparos em software e muito mais, sempre com transparência e garantia nos serviços.</p> -->
        </div>
     </section>
 
@@ -187,19 +183,24 @@ Fazemos troca de tela, bateria, conectores, reparos em software e muito mais, se
     <!-- sobre -->
      <section id="sobre" class="section">
       <div class="container">
-        <h2>Sobre a GB Cell</h2>
+        <h2 style="text-align: center; margin:20px; ">Sobre a GB Cell</h2>
         <div class="row">
           <div class="col-4">
             <div class="img-sobre">
-              <img style="width: 300px;" src="img/GB-Cell.png" alt="Técnico consertando celular">
+              <img style="width: 100%;" src="img/GB-Cell.png" alt="Técnico consertando celular">
             </div>
           </div>
           <div class="col-8">
             <div class="texto-sobre">
               <p>
-                A GB Cell é especializada em assistência técnica para celulares, oferecendo diagnóstico preciso,
-                reparos rápidos e atendimento transparente. Trabalhamos com as principais marcas do mercado
-                e utilizamos peças de qualidade para garantir a durabilidade dos serviços realizados.
+                GB Cell – Seu celular novo de novo.
+                Somos especialistas em assistência técnica para celulares e oferecemos diagnóstico preciso, reparos rápidos e um
+                atendimento totalmente transparente. Trabalhamos com as principais marcas do mercado e utilizamos apenas peças de alta
+                qualidade para garantir mais durabilidade, desempenho e segurança no seu aparelho.
+              
+                Para tornar tudo ainda mais prático, a GB Cell conta com o serviço de leva e traz: buscamos o seu celular diretamente
+                na sua casa e devolvemos já reparado no seu endereço. Você ganha conforto, rapidez e a tranquilidade de um serviço
+                feito por profissionais de confiança — sem complicações e sem perda de tempo.
               </p>
             </div>
 
