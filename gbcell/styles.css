@@ -66,7 +66,7 @@ body {
     align-items: center;
     text-align: center;
 }
-
+/* sobre */
 .texto-sobre{
     font-size: 1.3rem;
     padding: 5px;
@@ -98,7 +98,7 @@ body {
    
 
 /* ============================
-   Card Principal (Hero)
+   Card sobre )
 ============================ */
 .card {
   width: 350px;
@@ -629,37 +629,7 @@ h2 {
     }
 }
 
-/* ============================
-   Feedback
-============================ */
-.feedback-content {
-    text-align: center;
-}
 
-.feedback-content p {
-    margin-bottom: var(--spacing-medium);
-    font-size: var(--font-size-medium);
-}
-
-.btn-feedback {
-    display: inline-block;
-    margin-top: var(--spacing-medium);
-    padding: var(--spacing-medium) var(--spacing-large);
-    background-color: var(--color-primary);
-    color: var(--color-bg-dark);
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    font-weight: bold;
-    transition: var(--transition-fast);
-    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
-}
-
-.btn-feedback:hover,
-.btn-feedback:focus {
-    background-color: var(--color-primary-hover);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-card);
-}
 
 /* ============================
    Contato e Formulário
@@ -691,60 +661,7 @@ h2 {
     box-shadow: var(--shadow-card);
 }
 
-/* form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: var(--color-bg-light);
-    padding: var(--spacing-large);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-card);
-} */
-/* 
-.form-group {
-    margin-bottom: var(--spacing-medium);
-} */
 
-/* label {
-    display: block;
-    margin-bottom: var(--spacing-small);
-    color: var(--color-primary);
-    font-weight: bold;
-} */
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: var(--spacing-medium);
-    border: 1px solid var(--color-bg-lighter);
-    border-radius: 5px;
-    background-color: var(--color-bg-lighter);
-    color: var(--color-text-light);
-    font-size: var(--font-size-base);
-    transition: var(--transition-fast);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 5px var(--color-primary-light);
-}
-
-button {
-    width: 100%;
-    padding: var(--spacing-medium);
-    background-color: var(--color-primary);
-    color: var(--color-bg-dark);
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    font-size: var(--font-size-medium);
-    font-weight: bold;
-    transition: var(--transition-fast);
-    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
-}
 
 button:hover,
 button:focus {
