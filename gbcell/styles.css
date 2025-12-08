@@ -44,9 +44,6 @@ body {
     line-height: 1.6;
     color: var(--color-text-light);
     overflow-x: hidden;
-    background-image: url(img/circuit_board.png);
-    background-repeat: repeat;
-    background-size: cover;
 }
 
 .hero {
