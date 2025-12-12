@@ -80,18 +80,3 @@ if (form) {
     });
 }
 
-// ANIMAÇÃO SCROLL REVEAL CSS
-function revealOnScroll() {
-    let reveals = document.querySelectorAll("section, .faq-item, .footer, .map-container");
-
-    reveals.forEach(el => {
-        let rect = el.getBoundingClientRect();
-
-        if (rect.top < window.innerHeight - 100) {
-            el.classList.add("active");
-        }
-    });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);

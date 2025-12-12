@@ -622,6 +622,105 @@ BARRA DE SEPARAÇAO
   color: var(--cor-fundo-azul);
 }
 
+/* ================================
+   FORMULARIO - POPUP 
+================================ */
+
+#popup .popup-content {
+    background: linear-gradient(90deg, var(--cor-fundo-azul) 0%, var(--cor-fundo-preto) 100%);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 40px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 22px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    animation: popupFade 0.4s ease forwards;
+}
+
+@keyframes popupFade {
+    0% { opacity: 0; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#popup h3 {
+    text-align: center;
+    color: greenyellow;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 12px rgba(173, 255, 47, 0.4);
+}
+
+#whatsappForm input,
+#whatsappForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 1rem;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#whatsappForm input::placeholder,
+#whatsappForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+#whatsappForm input:focus,
+#whatsappForm textarea:focus {
+    border-color: greenyellow;
+    box-shadow: 0 0 12px rgba(173, 255, 47, 0.45);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+#whatsappForm button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: greenyellow;
+    color: #0F1C2E;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(173, 255, 47, 0.45);
+}
+
+#whatsappForm button:hover {
+    background: #caff4d;
+    transform: translateY(-3px);
+    box-shadow: 0 0 14px rgba(173, 255, 47, 0.65);
+}
+
+#whatsappForm button:active {
+    transform: scale(0.96);
+}
+
+.close-popup {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-popup:hover {
+    color: greenyellow;
+    text-shadow: 0 0 8px greenyellow;
+}
+
 /* =========================================================
    SERVIÇOS (CARDS)
 ========================================================= */
@@ -1496,7 +1595,6 @@ footer.footer {
     letter-spacing: 0.5px;
   }
 
-  /* Sidebar ajustada para celulares pequenos */
   #mobile-sidebar {
     width: 230px;
     right: -230px;
@@ -1511,163 +1609,3 @@ footer.footer {
   }
 }
 
-/* ======================================================
-   ✨ ANIMAÇÕES GERAIS — ESTILO PREMIUM 2025
-====================================================== */
-
-/* Animação base para aparecer suave */
-.reveal {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: all 0.9s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Slide Up */
-.slide-up {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.slide-up.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Fade + levitação suave */
-.fade-pop {
-    opacity: 0;
-    transform: translateY(20px) scale(0.97);
-    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.fade-pop.active {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-/* Cards com efeito hover premium */
-.card, .card-van {
-    transition: transform .35s ease, box-shadow .35s ease;
-}
-
-.card:hover, .card-van:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 0 25px rgba(72, 169, 255, 0.4);
-}
-
-
-/* ======================================================
-   ✨ HEADER — ENTRADA SUAVE E HOVER ILUMINADO
-====================================================== */
-
-header {
-    animation: headerFade 1s ease forwards;
-}
-
-@keyframes headerFade {
-    0% { opacity: 0; transform: translateY(-25px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Link hover com brilho suave */
-nav a {
-    transition: 0.4s ease;
-}
-
-nav a:hover {
-    text-shadow: 0 0 8px greenyellow;
-}
-
-
-/* ======================================================
-   ✨ BOTÕES — EFEITO TECH MODERNO
-====================================================== */
-
-.animated-button,
-.animated-button-dois,
-.btn-maps {
-    transition: all .45s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button:hover,
-.animated-button-dois:hover {
-    filter: drop-shadow(0 0 10px greenyellow);
-    transform: translateY(-3px);
-}
-
-.btn-maps:hover {
-    transform: translateY(-3px) scale(1.03);
-}
-
-
-/* ======================================================
-   ✨ SECTIONS — ENTRADA SUAVE AUTOMÁTICA
-====================================================== */
-
-section, .footer, .map-container, .faq-item {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: all .8s ease;
-}
-
-section.active,
-.footer.active,
-.map-container.active,
-.faq-item.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* ======================================================
-   ✨ LOADING DIVIDER — EFEITO MELHORADO
-====================================================== */
-
-.loading-divider .bar {
-    animation: loadmove 4.5s infinite cubic-bezier(.4, 0, .2, 1);
-    filter: drop-shadow(0 0 6px greenyellow);
-}
-
-
-/* ======================================================
-   ✨ CELULAR DA HERO — BRILHO E FLUTUAÇÃO
-====================================================== */
-
-.banner-mockup .celular {
-    animation: floating 3.5s ease-in-out infinite;
-}
-
-@keyframes floating {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-14px); }
-    100% { transform: translateY(0); }
-}
-
-.banner-title, .banner-desc {
-    animation: fadeInText 1.2s ease both;
-}
-
-@keyframes fadeInText {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-
-/* ======================================================
-    ✨ WHATSAPP FLOAT — ANIMAÇÃO DE PULSO
-====================================================== */
-
-.whatsapp-float {
-    animation: pulseWhats 2s infinite ease-in-out;
-}
-
-@keyframes pulseWhats {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-}
