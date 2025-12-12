@@ -22,7 +22,20 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#vantagens">Vantagens</a></li>
         <li><a href="#mapa">Localização</a></li>
-        <li><button class="btn-orcamento" onclick="openPopup()">Orçamento</button></li>
+        <li> <button class="animated-button" onclick="openPopup()">
+  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text">orçamento</span>
+  <span class="circle"></span>
+  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button></li>
       </ul>
     </nav>
   </header>
@@ -51,7 +64,21 @@
 <img src="img/eslogam-gbcell.png" alt="imagem com o slogan e o logo da assistecia tecnica da gbcell" srcset="">
       <div class="hero-texto">
         <p>Especialistas em assistência técnica de celulares. Reparo de tela, bateria e muito mais!</p>
-        <button class="btn">Saiba Mais</button>
+       <button class="animated-button">
+  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text">orçamento</span>
+  <span class="circle"></span>
+  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+
       </div>
     </div>
 
@@ -162,23 +189,80 @@
     </section>
 
 
-  <section id="mapa" class="section-mapa">
-    <h2>Nossa Localização</h2>
-    <div class="mapa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097!2d-46.654!3d-23.550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1sen!2sbr!4v1630000000000!5m2!1sen!2sbr"
-        allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
+  <section id="localizacao" class="map-section">
+  <div class="map-container">
 
-  <footer>
-    <p>&copy; 2023 GBCell. Todos os direitos reservados.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+    <div class="map-info fade-in-left">
+      <h2>Onde Estamos</h2>
+      <p>Faça-nos uma visita! Nossa unidade está pronta para te atender com rapidez e qualidade.</p>
+
+      <ul class="info-list">
+        <li>📍 Rua Exemplo, 100 — São Paulo/SP</li>
+        <li>📞 (11) 99999-9999</li>
+        <li>⏰ Seg a Sab: 09h às 19h</li>
+      </ul>
+
+      <a href="https://maps.google.com" target="_blank" class="btn-maps">Abrir no Google Maps</a>
     </div>
-  </footer>
+
+    <div class="map-box fade-in-right">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.760292456347!2d-46.662325!3d-23.576550!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x94ce59dff2f3f0e7%3A0x1234567890abcdef!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v000000000" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+ <footer class="footer animated-footer">
+  <div class="footer-container">
+
+    <div class="footer-col fade-in">
+      <h3>GB Cell</h3>
+      <p>Seu celular novo de novo. Qualidade, rapidez e confiança.</p>
+    </div>
+
+    <div class="footer-col fade-in">
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col fade-in">
+      <h4>Contato</h4>
+      <ul>
+        <li>📞 (11) 99999-9999</li>
+        <li>📍 Rua Exemplo, 100 - São Paulo</li>
+        <li>✉️ contato@gbcell.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-col fade-in">
+      <h4>Siga-nos</h4>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom slide-up">
+    <p>© 2025 GB Cell • Todos os direitos reservados.</p>
+    <p>desenvolvido por forgeweb</p>
+  </div>
+</footer>
+
 
   <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
