@@ -30,7 +30,9 @@ body {
   line-height: 1.6;
 }
 
-a{text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 /* =========================================================
    HEADER 
@@ -418,7 +420,7 @@ BARRA DE SEPARAÇAO
     BOTAO ORÇAMENTO
 ========================================================= */
 
-.animated-button  {
+.animated-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -509,9 +511,9 @@ BARRA DE SEPARAÇAO
 }
 
 
-.animated-button-dois  {
+.animated-button-dois {
   position: relative;
-   display: inline-flex !important;
+  display: inline-flex !important;
   width: auto !important;
   max-width: fit-content;
   align-items: center;
@@ -627,98 +629,105 @@ BARRA DE SEPARAÇAO
 ================================ */
 
 #popup .popup-content {
-    background: linear-gradient(90deg, var(--cor-fundo-azul) 0%, var(--cor-fundo-preto) 100%);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    padding: 40px;
-    width: 90%;
-    max-width: 420px;
-    border-radius: 22px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-    animation: popupFade 0.4s ease forwards;
+  background: linear-gradient(90deg, var(--cor-fundo-azul) 0%, var(--cor-fundo-preto) 100%);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 40px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 22px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  animation: popupFade 0.4s ease forwards;
 }
 
 @keyframes popupFade {
-    0% { opacity: 0; transform: scale(0.85); }
-    100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 #popup h3 {
-    text-align: center;
-    color: greenyellow;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 12px rgba(173, 255, 47, 0.4);
+  text-align: center;
+  color: greenyellow;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 12px rgba(173, 255, 47, 0.4);
 }
 
 #whatsappForm input,
 #whatsappForm textarea {
-    width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: white;
-    font-size: 1rem;
-    border-radius: 12px;
-    font-family: "Poppins", sans-serif;
-    outline: none;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 #whatsappForm input::placeholder,
 #whatsappForm textarea::placeholder {
-    color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 #whatsappForm input:focus,
 #whatsappForm textarea:focus {
-    border-color: greenyellow;
-    box-shadow: 0 0 12px rgba(173, 255, 47, 0.45);
-    background: rgba(255, 255, 255, 0.07);
+  border-color: greenyellow;
+  box-shadow: 0 0 12px rgba(173, 255, 47, 0.45);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 #whatsappForm button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    background: greenyellow;
-    color: #0F1C2E;
-    border-radius: 14px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(173, 255, 47, 0.45);
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: greenyellow;
+  color: #0F1C2E;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(173, 255, 47, 0.45);
 }
 
 #whatsappForm button:hover {
-    background: #caff4d;
-    transform: translateY(-3px);
-    box-shadow: 0 0 14px rgba(173, 255, 47, 0.65);
+  background: #caff4d;
+  transform: translateY(-3px);
+  box-shadow: 0 0 14px rgba(173, 255, 47, 0.65);
 }
 
 #whatsappForm button:active {
-    transform: scale(0.96);
+  transform: scale(0.96);
 }
 
 .close-popup {
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .close-popup:hover {
-    color: greenyellow;
-    text-shadow: 0 0 8px greenyellow;
+  color: greenyellow;
+  text-shadow: 0 0 8px greenyellow;
 }
 
 /* =========================================================
@@ -756,6 +765,71 @@ BARRA DE SEPARAÇAO
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom: 3px solid #fefefe;
+  background: url(img/blog-conserto-de-tela-de-celular-como-recuperar-a-funcionalidade-do-seu-smartphone-516e021af3.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+
+.card-2 {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-2::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
+  background: url(img/problemas-com-bateria.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+
+
+.card-3 {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-3::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
   background: url(img/reparos-iphone-substituicao-de-tela-em-brasilia-aguas-claras-df.png);
   background-position: center;
   background-repeat: repeat;
@@ -763,9 +837,58 @@ BARRA DE SEPARAÇAO
   transition: all 0.5s ease;
 }
 
+
+.card-4 {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-4::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
+  background: url(img/freepik-celular-lento-sendo-otimizado-com-interface-mostra-6310.webp);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+
+
+
 .card * {
   z-index: 1;
 }
+
+.card-2 * {
+  z-index: 1;
+}
+
+.card-3 * {
+  z-index: 1;
+}
+
+.card-4 * {
+  z-index: 1;
+}
+
+
 
 .icon {
   width: 90px;
@@ -809,11 +932,62 @@ BARRA DE SEPARAÇAO
   transform: scale(0.95);
 }
 
+.card-2:hover::before {
+  width: 350px;
+  height: 300px;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+
+.card-3:hover::before {
+  width: 350px;
+  height: 300px;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+
+.card-4:hover::before {
+  width: 350px;
+  height: 300px;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+
 .card:hover .card-info {
   transform: translate(0%, -25%);
 }
 
 .card:hover .icon {
+  transform: scale(2) translate(-60%, -40%);
+}
+
+.card-2:hover .card-info {
+  transform: translate(0%, -25%);
+}
+
+.card-2:hover .icon {
+  transform: scale(2) translate(-60%, -40%);
+}
+
+.card-3:hover .card-info {
+  transform: translate(0%, -25%);
+}
+
+.card-3:hover .icon {
+  transform: scale(2) translate(-60%, -40%);
+}
+
+.card-4:hover .card-info {
+  transform: translate(0%, -25%);
+}
+
+.card-4:hover .icon {
   transform: scale(2) translate(-60%, -40%);
 }
 
@@ -824,6 +998,21 @@ BARRA DE SEPARAÇAO
 
 .card:hover .card-info span,
 .card:hover .card-info p {
+  opacity: 0;
+}
+
+.card-2:hover .card-info span,
+.card-2:hover .card-info p {
+  opacity: 0;
+}
+
+.card-3:hover .card-info span,
+.card-3:hover .card-info p {
+  opacity: 0;
+}
+
+.card-4:hover .card-info span,
+.card-4:hover .card-info p {
   opacity: 0;
 }
 
@@ -1323,7 +1512,7 @@ footer.footer {
     width: 17px;
   }
 
-   header {
+  header {
     padding: 0.8rem 1.5rem;
   }
 
@@ -1408,8 +1597,8 @@ footer.footer {
     width: 12px;
     height: 12px;
   }
-  
-   header {
+
+  header {
     padding: 0.7rem 1.3rem;
   }
 
@@ -1487,7 +1676,7 @@ footer.footer {
     right: 10px;
   }
 
-    nav ul {
+  nav ul {
     display: none;
   }
 
@@ -1608,4 +1797,3 @@ footer.footer {
     padding: 8px 12px;
   }
 }
-
